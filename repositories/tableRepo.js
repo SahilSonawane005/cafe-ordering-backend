@@ -5,7 +5,7 @@ export const getTablesdb = async () => {
 };
 
 export const getTableByIddb = async (id) => {
-  const result = await pool.query("SELECT * FROM t_tables WHERE id = ?", [id]);
+  const result = await pool.query("SELECT * FROM t_tables WHERE id = $1", [id]);
   return result.rows[0];
 };
 export const getLastTableNumber = async () => {
