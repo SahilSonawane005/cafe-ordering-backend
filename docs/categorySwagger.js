@@ -47,6 +47,8 @@
  *     summary: Create Category
  *     description: Create a new category.
  *     tags: [Categories]
+ *     security:
+ *       - bearerAuth: []
  *     requestBody:
  *       required: true
  *       content:
@@ -67,6 +69,8 @@
  *     summary: Update Category
  *     description: Update an existing category.
  *     tags: [Categories]
+ *     security:
+ *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id
@@ -94,6 +98,8 @@
  *     summary: Delete Category
  *     description: Soft delete a category by setting its status to 2.
  *     tags: [Categories]
+ *     security:
+ *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id

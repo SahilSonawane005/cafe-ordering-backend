@@ -12,6 +12,8 @@
  *     summary: Get All Orders
  *     description: Fetch all generated orders.
  *     tags: [Orders]
+ *     security:
+ *       - bearerAuth: []
  *     responses:
  *       200:
  *         description: Orders fetched successfully
@@ -66,6 +68,8 @@
  *     summary: Update Order Transaction
  *     description: Update transaction status or modify menu, quantity or price.
  *     tags: [Orders]
+ *     security:
+ *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: txn_id

@@ -12,6 +12,8 @@
  *     summary: Get All Tables
  *     description: Fetch all cafe tables.
  *     tags: [Tables]
+ *     security:
+ *       - bearerAuth: []
  *     responses:
  *       200:
  *         description: Tables fetched successfully
@@ -26,6 +28,8 @@
  *     summary: Get Table By ID
  *     description: Fetch a table using its ID.
  *     tags: [Tables]
+ *     security:
+ *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id
@@ -47,6 +51,8 @@
  *     summary: Create Table
  *     description: Creates a new table. Table number, QR code and status are generated automatically.
  *     tags: [Tables]
+ *     security:
+ *       - bearerAuth: []
  *     requestBody:
  *       required: true
  *       content:
@@ -72,6 +78,8 @@
  *     summary: Update Table
  *     description: Update an existing table.
  *     tags: [Tables]
+ *     security:
+ *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id
@@ -95,6 +103,8 @@
  *     summary: Delete Table
  *     description: Delete a table by ID.
  *     tags: [Tables]
+ *     security:
+ *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id

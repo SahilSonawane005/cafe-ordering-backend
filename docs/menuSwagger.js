@@ -45,6 +45,8 @@
  *     summary: Create Menu Item
  *     description: Add a new menu item.
  *     tags: [Menu]
+ *     security:
+ *       - bearerAuth: []
  *     requestBody:
  *       required: true
  *       content:
@@ -63,6 +65,8 @@
  *     summary: Update Menu Item
  *     description: Update an existing menu item.
  *     tags: [Menu]
+ *     security:
+ *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id
@@ -90,6 +94,8 @@
  *     summary: Delete Menu Item
  *     description: Soft delete a menu item.
  *     tags: [Menu]
+ *     security:
+ *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id
