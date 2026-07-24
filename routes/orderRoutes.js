@@ -6,6 +6,7 @@ import {
   getOrders,
   updateOrderTxnStatus,
 } from "../controllers/orderController.js";
+import { authMiddleware } from "../middlewares/authMiddleware.js";
 
 const orderRouter = express.Router();
 
@@ -13,8 +14,8 @@ orderRouter.post("/add-item", addOrderItem);
 
 orderRouter.post("/generate-bill", generateBill);
 
-orderRouter.get("/", getOrders);
+orderRouter.get("/",authMiddleware, getOrders);
 
-orderRouter.put("/txn/:txn_id", updateOrderTxnStatus);
+orderRouter.put("/txn/:txn_id",authMiddleware, updateOrderTxnStatus);
 
 export default orderRouter;

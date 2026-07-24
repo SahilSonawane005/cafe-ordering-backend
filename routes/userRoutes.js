@@ -14,6 +14,6 @@ userRouter.get("/", authMiddleware, getUsers);
 userRouter.post("/register", registerUser);
 userRouter.post("/login", loginUser);
 userRouter.post("/refresh", refreshTokenHandler);
-userRouter.post("/logout", logoutUser);
+userRouter.post("/logout",authMiddleware, logoutUser);
 
 export default userRouter;
